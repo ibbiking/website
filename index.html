@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Product Store</title>
+    <!-- Main CSS for common styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Homepage-specific CSS -->
+    <link rel="stylesheet" href="css/listing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Luxury Collections</h1>
+            <p>Premium Products for Discerning Tastes</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-badge">New</div>
+                <div class="product-tumb">
+                    <img src="images/product1.jpg" alt="Wireless Bluetooth Headphones">
+                </div>
+                <div class="product-details">
+                    <h4><a href="product-1.html">Wireless Bluetooth Headphones</a></h4>
+                    <div class="product-price">$129.99</div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(24)</span>
+                    </div>
+                    <p>Premium noise-cancelling wireless headphones with 30-hour battery life.</p>
+                    <div class="product-actions">
+                        <a href="product-1.html" class="view-details">View Details</a>
+                        <div class="action-buttons">
+                            <button class="whatsapp-btn order-whatsapp" data-product="Wireless Bluetooth Headphones">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </button>
+                            <button class="order-form-btn" data-product="Wireless Bluetooth Headphones">
+                                <i class="fas fa-file-alt"></i> Order Form
+                            </button>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-badge hot">Hot</div>
+                <div class="product-tumb">
+                    <img src="images/product2.jpg" alt="Smart Watch Pro">
+                </div>
+                <div class="product-details">
+                    <h4><a href="product-2.html">Smart Watch Pro</a></h4>
+                    <div class="product-price">$199.99 <small>$249.99</small></div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(42)</span>
+                    </div>
+                    <p>Advanced smartwatch with health monitoring and GPS tracking.</p>
+                    <div class="product-actions">
+                        <a href="product-2.html" class="view-details">View Details</a>
+                        <div class="action-buttons">
+                            <button class="whatsapp-btn order-whatsapp" data-product="Smart Watch Pro">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </button>
+                            <button class="order-form-btn" data-product="Smart Watch Pro">
+                                <i class="fas fa-file-alt"></i> Order Form
+                            </button>
+                        </div>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products 3-10 would follow the same pattern -->
+            <!-- ... -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>We provide high-quality products with exceptional customer service since 2010.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Store St, City</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@mystore.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 My Product Store. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Order Form Popup -->
+    <div class="order-popup" id="orderPopup">
+        <div class="order-form-container">
+            <span class="close-popup">&times;</span>
+            <form class="order-form" id="orderForm">
+                <h3>Place Your Order</h3>
+                <div class="form-group">
+                    <label>Product Name</label>
+                    <input type="text" id="popupProductName" readonly>
+                </div>
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" id="customerName" required>
+                </div>
+                <div class="form-group">
+                    <label>Quantity</label>
+                    <input type="number" id="quantity" min="1" value="1" required>
+                </div>
+                <div class="form-group">
+                    <label>Address</label>
+                    <textarea id="address" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>City</label>
+                    <input type="text" id="city" required>
+                </div>
+                <button type="submit" class="submit-order">
+                    <i class="fas fa-paper-plane"></i> Submit Order
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
