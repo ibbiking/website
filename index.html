@@ -3,29 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Product Store</title>
+    <title>Sublime Traders</title>
     <!-- Main CSS for common styles -->
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- Homepage-specific CSS -->
-    <link rel="stylesheet" href="./css/listing.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Luxury Collections</h1>
+            <h1>SUBLIME STAR TRADERS</h1>
             <p>Premium Products for Discerning Tastes</p>
         </div>
     </header>
 
     <nav>
         <div class="container">
-            <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">Sublime Collections</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <span class="close-menu">&times;</span>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -33,76 +42,73 @@
         <div class="product-grid">
             <!-- Product 1 -->
             <div class="product-card">
-                <div class="product-badge">New</div>
-                <div class="product-tumb">
-                    <img src="images/product1.jpg" alt="Wireless Bluetooth Headphones">
-                </div>
-                <div class="product-details">
-                    <h4><a href="product-1.html">Wireless Bluetooth Headphones</a></h4>
-                    <div class="product-price">$129.99</div>
-                    <div class="product-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <span>(24)</span>
-                    </div>
-                    <p>Premium noise-cancelling wireless headphones with 30-hour battery life.</p>
-                    <div class="product-actions">
-                        <a href="product-1.html" class="view-details">View Details</a>
-                        <div class="action-buttons">
-                            <button class="whatsapp-btn order-whatsapp" data-product="Wireless Bluetooth Headphones">
-                                <i class="fab fa-whatsapp"></i> WhatsApp
-                            </button>
-                            <button class="order-form-btn" data-product="Wireless Bluetooth Headphones">
-                                <i class="fas fa-file-alt"></i> Order Form
-                            </button>
-                        </div>
-                        <button class="add-to-cart">
-                            <i class="fas fa-shopping-cart"></i> Add to Cart
-                        </button>
-                    </div>
-                </div>
+    <div class="product-badge new-badge">New</div>
+    <a href="product-1.html" class="product-image-link">
+        <div class="product-tumb">
+            <img src="images/product1.jpeg" alt="Musical Elephant Drummer Toy">
+        </div>
+    </a>
+    <div class="product-details">
+        <h4><a href="product-1.html">Musical Elephant Drummer Toy with Floating Football – Interactive Light & Sound Toy for Kids</a></h4>
+        <div class="product-price">Rs 2299</div>
+        <div class="product-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>(24)</span>
+        </div>
+        <p>Exciting drumming action while keeping a small football floating in the air.</p>
+        <div class="product-actions">
+            <a href="product-1.html" class="view-details">View Details</a>
+            <div class="action-buttons">
+                <button class="whatsapp-btn order-whatsapp" data-product="Musical Elephant Drummer Toy">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </button>
+                <button class="order-form-btn" data-product="Musical Elephant Drummer Toy">
+                    <i class="fas fa-shopping-cart"></i> Submit Order
+                </button>
             </div>
+        </div>
+    </div>
+</div>
 
             <!-- Product 2 -->
             <div class="product-card">
-                <div class="product-badge hot">Hot</div>
-                <div class="product-tumb">
-                    <img src="images/product2.jpg" alt="Smart Watch Pro">
-                </div>
-                <div class="product-details">
-                    <h4><a href="product-2.html">Smart Watch Pro</a></h4>
-                    <div class="product-price">$199.99 <small>$249.99</small></div>
-                    <div class="product-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <span>(42)</span>
-                    </div>
-                    <p>Advanced smartwatch with health monitoring and GPS tracking.</p>
-                    <div class="product-actions">
-                        <a href="product-2.html" class="view-details">View Details</a>
-                        <div class="action-buttons">
-                            <button class="whatsapp-btn order-whatsapp" data-product="Smart Watch Pro">
-                                <i class="fab fa-whatsapp"></i> WhatsApp
-                            </button>
-                            <button class="order-form-btn" data-product="Smart Watch Pro">
-                                <i class="fas fa-file-alt"></i> Order Form
-                            </button>
-                        </div>
-                        <button class="add-to-cart">
-                            <i class="fas fa-shopping-cart"></i> Add to Cart
-                        </button>
-                    </div>
-                </div>
+    <div class="product-badge hot-badge">Hot</div>
+    <a href="product-2.html" class="product-image-link">
+        <div class="product-tumb">
+            <img src="images/product2.png" alt="Musical Elephant Drummer Toy">
+        </div>
+    </a>
+    <div class="product-details">
+        <h4><a href="product-2.html">Musical Hen Toy with Egg-Laying Action & Lights – Fun Interactive Farm Animal for Kids</a></h4>
+        <div class="product-price">Rs 1299</div>
+        <div class="product-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>(18)</span>
+        </div>
+        <p>This hen walks forward, lays eggs, and plays cheerful music.</p>
+        <div class="product-actions">
+            <a href="product-2.html" class="view-details">View Details</a>
+            <div class="action-buttons">
+                <button class="whatsapp-btn order-whatsapp" data-product="Musical Elephant Drummer Toy">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </button>
+                <button class="order-form-btn" data-product="Musical Elephant Drummer Toy">
+                    <i class="fas fa-shopping-cart"></i> Submit Order
+                </button>
             </div>
+        </div>
+    </div>
+</div>
 
-            <!-- Products 3-10 would follow the same pattern -->
-            <!-- ... -->
+            <!-- Additional products can be added here following the same pattern -->
         </div>
     </main>
 
@@ -114,13 +120,13 @@
                     <p>We provide high-quality products with exceptional customer service since 2010.</p>
                 </div>
                 <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
+    <h3>Quick Links</h3>
+    <ul class="quick-links">
+        <li><a href="index.html" class="quick-link"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#" class="quick-link"><i class="fas fa-box-open"></i> Products</a></li>
+        <li><a href="contact.html" class="quick-link"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+</div>
                 <div class="footer-section">
                     <h3>Contact Info</h3>
                     <p><i class="fas fa-map-marker-alt"></i> 123 Store St, City</p>
@@ -129,43 +135,45 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 My Product Store. All Rights Reserved.</p>
+                <p>&copy; 2023 Sublime Star Traders. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
     <!-- Order Form Popup -->
     <div class="order-popup" id="orderPopup">
-        <div class="order-form-container">
-            <span class="close-popup">&times;</span>
-            <form class="order-form" id="orderForm">
-                <h3>Place Your Order</h3>
-                <div class="form-group">
-                    <label>Product Name</label>
-                    <input type="text" id="popupProductName" readonly>
-                </div>
-                <div class="form-group">
-                    <label>Your Name</label>
-                    <input type="text" id="customerName" required>
-                </div>
-                <div class="form-group">
-                    <label>Quantity</label>
-                    <input type="number" id="quantity" min="1" value="1" required>
-                </div>
-                <div class="form-group">
-                    <label>Address</label>
-                    <textarea id="address" required></textarea>
-                </div>
-                <div class="form-group">
-                    <label>City</label>
-                    <input type="text" id="city" required>
-                </div>
-                <button type="submit" class="submit-order">
-                    <i class="fas fa-paper-plane"></i> Submit Order
-                </button>
-            </form>
-        </div>
+    <div class="order-form-container">
+        <form class="order-form" id="orderForm">
+            <button type="button" class="close-popup" aria-label="Close">&times;</button>
+            <h3>Place Your Order</h3>
+            <div class="form-group">
+                <label>Product Name</label>
+                <input type="text" id="popupProductName" readonly>
+            </div>
+            <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" id="customerName" required>
+            </div>
+            <div class="form-group">
+                <label>Quantity</label>
+                <input type="number" id="quantity" min="1" value="1" required>
+            </div>
+            <div class="form-group">
+                <label>Address</label>
+                <textarea id="address" required></textarea>
+            </div>
+            <div class="form-group">
+                <label>City</label>
+                <input type="text" id="city" required>
+            </div>
+            <input type="hidden" id="popupProductLink">
+            <!-- Additional form fields if needed -->
+            <button type="submit" class="submit-order">
+                <i class="fas fa-paper-plane"></i> Submit Order
+            </button>
+        </form>
     </div>
+</div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
