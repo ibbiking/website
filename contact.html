@@ -6,28 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Luxury Collections</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <h1>Luxury Collections</h1>
-            <p>Premium Products for Discerning Tastes</p>
-        </div>
-    </header>
+    <div class="container">
+        <h1>SUBLIME STAR TRADERS</h1>
+        <p>Premium Products for Discerning Tastes</p>
+    </div>
+</header>
 
     <nav>
-        <div class="container">
-            <ul>
+    <div class="container">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">SUBLIME STAR TRADERS</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <span class="close-menu">&times;</span>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <main class="container contact-page">
         <h2>Get In Touch</h2>
@@ -122,13 +132,13 @@
                     <p>We provide high-quality products with exceptional customer service since 2010.</p>
                 </div>
                 <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
+    <h3>Quick Links</h3>
+    <ul class="quick-links">
+        <li><a href="index.html" class="quick-link"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#" class="quick-link"><i class="fas fa-box-open"></i> Products</a></li>
+        <li><a href="contact.html" class="quick-link"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+</div>
                 <div class="footer-section">
                     <h3>Newsletter</h3>
                     <form class="newsletter-form">
@@ -143,7 +153,8 @@
         </div>
     </footer>
 
-    <script src="js/contact.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>
