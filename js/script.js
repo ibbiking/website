@@ -221,7 +221,7 @@ $('.close-popup').click(function() {
                                `*Message:* ${message}`;
         
         // Replace with your WhatsApp number (with country code, remove +)
-        const whatsappNumber = '923006297028';
+        const whatsappNumber = '923000297028';
         
         // Open WhatsApp with the pre-filled message
         window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, '_blank');
