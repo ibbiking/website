@@ -250,7 +250,7 @@ function sendWhatsAppOrder({
     address = '', 
     city = ''
 }) {
-    const whatsappNumber = '923006297028';
+    const whatsappNumber = '923000297028';
     const message = `*ORDER REQUEST*\n\n` +
                    `*Product:* ${productName}\n` +
                    `*Link:* ${productLink}\n` +
